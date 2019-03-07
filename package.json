@@ -1,7 +1,7 @@
 {
-  "name": "@artemv/simple-semantic-config",
+  "name": "simple-semantic-config",
   "description": "Simple semantic-release shareable config to publish npm packages",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "author": {
     "name": "Artem Vasiliev",
     "email": "artem.job@gmail.com",
