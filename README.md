@@ -1,25 +1,20 @@
-# @semantic-release/gitlab-config
+# simple-semantic-config
 
-[**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish npm packages with [GitLab](https://gitlab.com).
+[**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish npm packages with simple commit rules
 
-[![Travis](https://img.shields.io/travis/semantic-release/gitlab-config.svg)](https://travis-ci.org/semantic-release/gitlab-config)
-[![Greenkeeper badge](https://badges.greenkeeper.io/semantic-release/gitlab-config.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/artemv/simple-semantic-config.svg?branch=master)](https://travis-ci.org/artemv/simple-semantic-config)
 
-[![npm latest version](https://img.shields.io/npm/v/@semantic-release/gitlab-config/latest.svg)](https://www.npmjs.com/package/@semantic-release/gitlab-config)
-[![npm next version](https://img.shields.io/npm/v/@semantic-release/gitlab-config/next.svg)](https://www.npmjs.com/package/@semantic-release/gitlab-config)
-
-## Plugins
-
-This shareable configuration use the following plugins:
-- [`@semantic-release/commit-analyzer`](https://github.com/semantic-release/commit-analyzer)
-- [`@semantic-release/release-notes-generator`](https://github.com/semantic-release/release-notes-generator)
-- [`@semantic-release/npm`](https://github.com/semantic-release/npm)
-- [`@semantic-release/gitlab`](https://github.com/semantic-release/gitlab)
+## Why this project exists
+This is a shareable config to publish npm packages with simple commit rules bases on 
+[angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular) 
+preset of [commit-analyzer plugin](https://github.com/semantic-release/commit-analyzer#usage) with following change:
+`docs`, `chore` and `refactor` commit types yield patch version.
+Thus pretty much any correctly formatted commit message yields new version.
 
 ## Install
 
 ```bash
-$ npm install --save-dev semantic-release @semantic-release/gitlab-config
+$ yarn add "artemv/simple-semantic-config"
 ```
 
 ## Usage
@@ -28,10 +23,6 @@ The shareable config can be configured in the [**semantic-release** configuratio
 
 ```json
 {
-  "extends": "@semantic-release/gitlab-config"
+  "extends": "simple-semantic-config"
 }
 ```
-
-## Configuration
-
-See each [plugin](#plugins) documentation for required installation and configuration steps.
