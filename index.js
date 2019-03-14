@@ -17,6 +17,10 @@ module.exports = {
             type: 'refactor',
             release: 'patch',
           },
+          {
+            message: "/BREAKING CHANGE/",
+            release: "major",
+          },
         ],
       },
     ],
