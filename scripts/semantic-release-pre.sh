@@ -11,6 +11,10 @@ perl -ne 'print "$1\n" if /The next release version is (.*)$/' $OUT_DIR/semantic
 VERSION=$(cat $OUT_DIR/.version)
 if [ "${VERSION}" == "" ]; then
     echo "Semantic version isn't generated - please investigate"
-    exit -1
+    if [ "${ALLOW_FAILING}" == "false" ]; then
+      exit -1
+    else
+      echo "..but we allow failing"
+    fi
 fi
 cat $OUT_DIR/.version
