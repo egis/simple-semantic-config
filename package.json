@@ -8,7 +8,7 @@
     "url": "github.com/artemv"
   },
   "bin": {
-    "simple-semantic-release-pre": "./scripts/semantic-release-pre.sh"
+    "simple-semantic-release-pre": "scripts/semantic-release-pre.sh"
   },
   "bugs": {
     "url": "https://github.com/artemv/simple-semantic-config/issues"
