@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# Figures out new version according to semantic-release configuration, and writes it to build/.version file
-#
-# Example: yarn simple-semantic-release-pre
-# OR
-# ALLOW_FAILING=false BRANCH=development yarn simple-semantic-release-pre
-# OR
-# OUT_DIR=tmp yarn simple-semantic-release-pre
-
 if [[ "$OUT_DIR" == "" ]]; then
   OUT_DIR=build
 fi
