@@ -14,7 +14,7 @@ Thus pretty much any correctly formatted commit message yields new version.
 ## Install
 
 ```bash
-$ yarn add --dev "artemv/simple-semantic-config"
+$ yarn add --dev "simple-semantic-config"
 ```
 
 ## Usage
