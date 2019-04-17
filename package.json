@@ -1,15 +1,14 @@
 {
   "name": "simple-semantic-config",
   "description": "Simple semantic-release shareable config to publish npm packages",
-  "version": "6.0.4",
+  "version": "6.0.12",
   "author": {
     "name": "Artem Vasiliev",
     "email": "artem.job@gmail.com",
     "url": "github.com/artemv"
   },
   "bin": {
-    "simple-semantic-release-pre": "./scripts/semantic-release-pre.sh",
-    "simple-semantic-release": "./scripts/semantic-release.sh"
+    "simple-semantic-release-pre": "bin/semantic-release-pre.sh"
   },
   "bugs": {
     "url": "https://github.com/artemv/simple-semantic-config/issues"

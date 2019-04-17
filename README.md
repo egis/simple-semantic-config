@@ -26,3 +26,18 @@ The shareable config can be configured in the [**semantic-release** configuratio
   "extends": "simple-semantic-config"
 }
 ```
+
+## semantic-release-pre.sh
+
+Figures out new version according to semantic-release configuration, and writes it to build/.version file
+
+Example: `yarn simple-semantic-release-pre`
+
+OR
+
+`ALLOW_FAILING=false BRANCH=development yarn simple-semantic-release-pre`
+
+OR
+
+`OUT_DIR=tmp yarn simple-semantic-release-pre`
+
