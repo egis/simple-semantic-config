@@ -18,6 +18,10 @@ module.exports = {
             release: 'patch',
           },
           {
+            type: 'build',
+            release: 'patch',
+          },
+          {
             message: '/BREAKING CHANGE/',
             release: 'major',
           },
