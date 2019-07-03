@@ -22,7 +22,7 @@ $ yarn add --dev "simple-semantic-config"
 The shareable config can be configured in the [**semantic-release** configuration file](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#configuration) or package.json:
 
 ```json
-{ // package.json
+{
   "release": {
     "extends": "simple-semantic-config"
   }
