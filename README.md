@@ -52,7 +52,7 @@ When it's run in CircleCI build context it uses CIRCLE_BRANCH so specifying BRAN
 ```
 git remote rm origin
 git remote add origin git@github.com:upstream/my-project.git
-BRANCH=master yarn simple-semantic-release-pre # this 
+BRANCH=master yarn simple-semantic-release-pre 
 git remote rm origin
 git remote add origin git@github.com:my-account/my-project.git
 ``` 
