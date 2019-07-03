@@ -19,19 +19,21 @@ $ yarn add --dev "simple-semantic-config"
 
 ## Usage
 
-The shareable config can be configured in the [**semantic-release** configuration file](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#configuration):
+The shareable config can be configured in the [**semantic-release** configuration file](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#configuration) or package.json:
 
 ```json
-{
-  "extends": "simple-semantic-config"
+{ // package.json
+  "release": {
+    "extends": "simple-semantic-config"
+  }
 }
 ```
 
 ## semantic-release-pre.sh
 
-Figures out new version according to semantic-release configuration, and writes it to build/.version file
+Figures out new version according to semantic-release configuration, and writes it to build/.version file. 
 
-Example: `yarn simple-semantic-release-pre`
+Example: `BRANCH=master yarn simple-semantic-release-pre`
 
 OR
 
@@ -39,5 +41,18 @@ OR
 
 OR
 
-`OUT_DIR=tmp yarn simple-semantic-release-pre`
+`OUT_DIR=tmp BRANCH=master yarn simple-semantic-release-pre`
 
+This requires having write Git access to repo specified in package.json, you can set it by exporting GH_TOKEN env var with: `export GH_TOKEN=my-key`
+
+When it's run in CircleCI build context it uses CIRCLE_BRANCH so specifying BRANCH is not needed there:
+`yarn simple-semantic-release-pre` is enough.
+
+`semantic-release` takes previous versions info from Github tags of `origin` remote, so when running it from local fork switch origin to upstream to get the correct new version:
+```
+git remote rm origin
+git remote add origin git@github.com:upstream/my-project.git
+BRANCH=master yarn simple-semantic-release-pre # this 
+git remote rm origin
+git remote add origin git@github.com:my-account/my-project.git
+``` 
