@@ -1,7 +1,7 @@
 {
   "name": "simple-semantic-config",
   "description": "Simple semantic-release shareable config to publish npm packages",
-  "version": "6.0.16",
+  "version": "6.1.0",
   "author": {
     "name": "Artem Vasiliev",
     "email": "artem.job@gmail.com",
@@ -14,7 +14,7 @@
     "url": "https://github.com/artemv/simple-semantic-config/issues"
   },
   "dependencies": {
-    "semantic-release": "^15.13.3"
+    "semantic-release": "^16.0.2"
   },
   "devDependencies": {
     "xo": "^0.24.0"
