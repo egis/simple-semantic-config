@@ -48,7 +48,7 @@ OR
 
 `ALLOW_FAILING=false BRANCH=development yarn simple-semantic-release-pre`
 
-OR
+OR, to write to tmp/.version file:
 
 `OUT_DIR=tmp BRANCH=master yarn simple-semantic-release-pre`
 
