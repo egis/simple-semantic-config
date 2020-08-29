@@ -29,7 +29,16 @@ The shareable config can be configured in the [**semantic-release** configuratio
 }
 ```
 
-## semantic-release-pre.sh
+It can work in [monorepo semantic-release configuration](https://github.com/pmowrer/semantic-release-monorepo), too: 
+```json
+{
+  "release": {
+    "extends": ["semantic-release-monorepo", "simple-semantic-config"]
+  }
+}
+```
+
+## semantic-release-pre
 
 Figures out new version according to semantic-release configuration, and writes it to build/.version file. 
 
