@@ -1,7 +1,7 @@
 {
   "name": "simple-semantic-config",
   "description": "Simple semantic-release shareable config to publish npm packages",
-  "version": "7.1.1",
+  "version": "7.1.1-egis.1",
   "author": {
     "name": "Artem Vasiliev",
     "email": "artem.job@gmail.com",
@@ -14,13 +14,13 @@
     "url": "https://github.com/artemv/simple-semantic-config/issues"
   },
   "dependencies": {
-    "semantic-release": "^16.0.2"
+    "semantic-release": "^22.0.7"
   },
   "devDependencies": {
     "xo": "^0.24.0"
   },
   "engines": {
-    "node": ">=8.3"
+    "node": "<= 18.20.4"
   },
   "files": [
     "bin",
